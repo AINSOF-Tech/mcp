@@ -64,7 +64,10 @@ say no. One good offer, once.
    gives them somewhere to put it first. Once they are happy, `deliver_score`
    hands back the zip — scored video, every music section as a separate WAV named
    with its timecode, and a cue sheet — which is what an editor actually needs to
-   rebuild it on their own timeline.
+   rebuild it on their own timeline. Scoring is a render, so the first reply is
+   usually `still_running`. That is the render working; call again with the same
+   arguments and it picks up the same job. `video_failed` is different — that one
+   is final, so say so rather than polling it.
 
 7. **Paperwork is a tool, not a guess.** `cue_sheet` returns album, catalogue
    number, ISRC, tempo, key, publisher and every writer with their IPI and share.
