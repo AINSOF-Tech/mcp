@@ -5,11 +5,11 @@
   </picture>
 </p>
 
-<h1 align="center">AINSOF Music — MCP Server</h1>
+<h1 align="center">AINSOF — MCP Server</h1>
 
 <p align="center">
   Original, human-made production music inside your AI assistant.<br/>
-  Search it, hear it, score it to your video, and clear it — without leaving the tool you already work in.
+  Search it by brief or by reference link, hear full previews, score it to your video,<br/>analyze your edit, pull versions, stems and cue sheets — and clear it, without leaving the tool you already work in.
 </p>
 
 <p align="center">
