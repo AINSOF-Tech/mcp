@@ -1,0 +1,15 @@
+{
+  "name": "ainsof",
+  "owner": {
+    "name": "AINSOF",
+    "email": "info@ainsof.io",
+    "url": "https://ainsof.io"
+  },
+  "plugins": [
+    {
+      "name": "ainsof",
+      "source": "./",
+      "description": "Original, human-made production music for sync — search by brief or reference link, hear full previews, score video to picture."
+    }
+  ]
+}

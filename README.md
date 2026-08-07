@@ -41,6 +41,12 @@ Settings → Connectors → **Add custom connector** → paste `https://mcp.ains
 claude mcp add --transport http ainsof https://mcp.ainsof.io
 ```
 
+Or install it as a plugin, which brings the connection along with it:
+```bash
+/plugin marketplace add AINSOF-Tech/mcp
+/plugin install ainsof
+```
+
 ### Cursor
 Add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
 ```json
