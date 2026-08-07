@@ -12,7 +12,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.ainsof.io/mcp"
+      "url": "https://mcp.ainsof.io"
     }
   ]
 }

@@ -20,7 +20,7 @@
 
 ---
 
-**Endpoint:** `https://mcp.ainsof.io/mcp` (Streamable HTTP, no key required)
+**Endpoint:** `https://mcp.ainsof.io` (Streamable HTTP, no key required)
 
 AINSOF is a music superpowers creative company: a curated, growing production-music
 catalogue built for sync, with purpose-made tools for connecting music to picture.
@@ -34,11 +34,11 @@ a finished, professionally scored edit of your video.
 ## Connect
 
 ### Claude (claude.ai / Claude Desktop)
-Settings → Connectors → **Add custom connector** → paste `https://mcp.ainsof.io/mcp`.
+Settings → Connectors → **Add custom connector** → paste `https://mcp.ainsof.io`.
 
 ### Claude Code
 ```bash
-claude mcp add --transport http ainsof https://mcp.ainsof.io/mcp
+claude mcp add --transport http ainsof https://mcp.ainsof.io
 ```
 
 ### Cursor
@@ -46,16 +46,16 @@ Add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
 ```json
 {
   "mcpServers": {
-    "ainsof": { "url": "https://mcp.ainsof.io/mcp" }
+    "ainsof": { "url": "https://mcp.ainsof.io" }
   }
 }
 ```
 
 ### Grok
-Connectors → add a remote MCP connector with `https://mcp.ainsof.io/mcp`.
+Connectors → add a remote MCP connector with `https://mcp.ainsof.io`.
 
 ### ChatGPT
-Developer mode → Connectors → add `https://mcp.ainsof.io/mcp`.
+Developer mode → Connectors → add `https://mcp.ainsof.io`.
 
 ## What it can do
 
@@ -94,7 +94,7 @@ the cue-sheet data, and licensing is one email — every cue in the catalogue is
 pre-cleared, one owner, no chain-of-title archaeology.
 
 **A developer building a creative tool.** Your users edit video in your product.
-Point your agent at `https://mcp.ainsof.io/mcp` and music discovery — search,
+Point your agent at `https://mcp.ainsof.io` and music discovery — search,
 reference matching, previews, scoring to picture — becomes a feature of your app,
 with no key required to start.
 
