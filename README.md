@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="assets/ainsof-logo-512.png" width="120" alt="AINSOF" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ainsof-logo-white.png">
+    <img src="assets/ainsof-logo-black.png" width="220" alt="AINSOF" />
+  </picture>
 </p>
 
 <h1 align="center">AINSOF Music — MCP Server</h1>
@@ -73,13 +76,27 @@ Developer mode → Connectors → add `https://mcp.ainsof.io/mcp`.
 Previews are always the complete piece, watermarked — cut with them freely before
 anything is licensed.
 
-## Try it
+## In practice
 
-Ask your assistant, with the connector on:
+**A video editor, mid-edit.** You're cutting a 45-second alpine ski clip in silence.
+You tell your assistant: *"fast cuts, no narration — score it."* It calls
+`find_soundtrack` with the length and pace, streams you three full previews, and the
+one you keep comes back through `score_my_video` already synced to your cut.
 
-> *"Find me something that feels like Hans Zimmer's Time, for a 60-second brand film."*
+**A creative team pitching with a reference.** The client says *"something like Hans
+Zimmer's Time."* Paste the link. `search_by_reference` listens to the actual record
+and answers with the closest cues in the AINSOF catalogue — playable immediately,
+licensable the same day.
 
-> *"I'm editing an alpine ski clip, 45 seconds, fast cuts, no narration — score it."*
+**An agency producer clearing a spot.** The edit is locked and legal wants paper.
+`get_track` returns every version and stem of the cue you used, `cue_sheet` returns
+the cue-sheet data, and licensing is one email — every cue in the catalogue is
+pre-cleared, one owner, no chain-of-title archaeology.
+
+**A developer building a creative tool.** Your users edit video in your product.
+Point your agent at `https://mcp.ainsof.io/mcp` and music discovery — search,
+reference matching, previews, scoring to picture — becomes a feature of your app,
+with no key required to start.
 
 ## Rate limits
 
