@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.ainsof/music",
+  "title": "AINSOF Music",
+  "description": "Search, hear and license original human-made production music from the AINSOF catalogue — by brief, by reference link, or scored straight to your video.",
+  "version": "1.0.0",
+  "websiteUrl": "https://ainsof.io",
+  "repository": {
+    "url": "https://github.com/AINSOF-Tech/mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.ainsof.io/mcp"
+    }
+  ]
+}
