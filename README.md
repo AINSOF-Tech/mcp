@@ -41,11 +41,19 @@ Settings → Connectors → **Add custom connector** → paste `https://mcp.ains
 claude mcp add --transport http ainsof https://mcp.ainsof.io
 ```
 
-Or install it as a plugin, which brings the connection along with it:
+Or install it as a plugin, which brings the connection **and** the soundtracking
+skill along with it:
 ```bash
 /plugin marketplace add AINSOF-Tech/mcp
 /plugin install ainsof
 ```
+
+The plugin bundles two things: the AINSOF connector above, and a **`soundtrack`
+skill** that teaches the assistant when to reach for music on its own — measure
+the cut, ask for the version that fits that exact length rather than a full track,
+show three options instead of ten, and never imply a licence that isn't there. So
+a video that gets exported in your session gets a real shortlist without anyone
+having to remember to ask for one.
 
 ### Cursor
 Add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
@@ -109,8 +117,15 @@ with no key required to start.
 | Tier | Calls / day |
 |---|---|
 | No key | 300 |
-| Free API key (`get_api_key` tool) | 1,000 |
+| With an API key | 1,000 |
 | Need more? | info@ainsof.io |
+
+Keys are free — email **info@ainsof.io**. Send one as a bearer token:
+
+```bash
+claude mcp add --transport http ainsof https://mcp.ainsof.io \
+  --header "Authorization: Bearer ain_live_…"
+```
 
 ## Licensing & privacy
 
