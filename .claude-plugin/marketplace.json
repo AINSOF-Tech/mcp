@@ -9,8 +9,16 @@
   "plugins": [
     {
       "name": "ainsof",
+      "displayName": "AINSOF",
+      "description": "Original, human-made production music for sync. Search the AINSOF catalogue by written brief or by reference link, hear complete watermarked previews, score video straight to picture, and pull versions, stems and cue sheets. Bundles the AINSOF connector, a soundtracking skill, a music-supervisor sub-agent and four slash commands. No key required to start.",
+      "category": "design",
       "source": "./",
-      "description": "Original, human-made production music for sync — search by brief or reference link, hear full previews, score video to picture."
+      "homepage": "https://ainsof.io",
+      "author": {
+        "name": "AINSOF",
+        "email": "info@ainsof.io",
+        "url": "https://ainsof.io"
+      }
     }
   ]
 }
