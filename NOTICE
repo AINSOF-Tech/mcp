@@ -1,0 +1,20 @@
+AINSOF — scope of the MIT licence in this repository
+
+The MIT licence in LICENSE covers the contents of this repository only: the
+connection configuration, the plugin manifest, the skills, the sub-agent, the
+slash commands and the documentation.
+
+It does not cover, and no right is granted in, any of the following:
+
+  * The AINSOF music catalogue — the recordings, the compositions, the stems,
+    the sound effects, the artwork and the metadata that describe them.
+  * The hosted MCP service at https://mcp.ainsof.io, including its search,
+    scoring and delivery behaviour.
+  * The AINSOF name and logo as trade marks.
+
+Those remain the property of AINSOF and are licensed separately. Music is
+licensed for use through https://ainsof.io — nothing in this repository, and no
+preview returned by the service, conveys a synchronisation or any other music
+licence.
+
+Copyright (c) 2026 AINSOF. All rights reserved except as granted in LICENSE.

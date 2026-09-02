@@ -142,7 +142,9 @@ claude mcp add --transport http ainsof https://mcp.ainsof.io \
 
 The catalogue itself is commercial — every cue is signed, owned and cleared, and
 licensing runs through [ainsof.io](https://ainsof.io). This repository contains the
-public server manifest and connection docs only.
+public server manifest and connection docs only, released under the MIT licence
+([LICENSE](LICENSE)); what that licence does and does not cover is spelled out in
+[NOTICE](NOTICE).
 
 Privacy: the server receives only the tool calls sent to it, never the rest of your
 conversation. Full policy: [ainsof.io/privacy.html](https://ainsof.io/privacy.html).
