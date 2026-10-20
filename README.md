@@ -15,7 +15,7 @@
 <p align="center">
   <a href="https://ainsof.io">ainsof.io</a> ·
   <a href="https://mcp.ainsof.io">mcp.ainsof.io</a> ·
-  <a href="https://search.ainsof.io">browse the catalogue</a>
+  <a href="https://search.ainsof.io">browse the catalog</a>
 </p>
 
 ---
@@ -23,11 +23,11 @@
 **Endpoint:** `https://mcp.ainsof.io` (Streamable HTTP, no key required)
 
 AINSOF is a music superpowers creative company: a curated, growing production-music
-catalogue built for sync, with purpose-made tools for connecting music to picture.
+catalog built for sync, with purpose-made tools for connecting music to picture.
 Every cue is written, performed and produced by human composers — nothing in the
-catalogue is AI-generated. New original music lands every week.
+catalog is AI-generated. New original music lands every week.
 
-This server puts the whole catalogue behind 12 MCP tools, so an AI assistant can
+This server puts the whole catalog behind 12 MCP tools, so an AI assistant can
 find the right cue for a scene, play it, fetch stems and cut-downs, and even return
 a finished, professionally scored edit of your video.
 
@@ -59,7 +59,7 @@ cut, and what to hand over when legal asks for paper.
 | | `setup` | Connect and verify the server, raise the rate limit with a free key, and recognise the two replies that look like errors and aren't. |
 | **Sub-agent** | `music-supervisor` | Turns a brief into a defensible shortlist — several spots at once, each measured, searched from more than one angle, auditioned, ranked, with the trade-off named and the cue sheet attached. |
 | **Commands** | `/score-video` | Measure a cut, find the music, and take it through to a finished score synced to picture. |
-| | `/find-music` | Search the catalogue by brief, mood, scene, composer or catalogue number. |
+| | `/find-music` | Search the catalog by brief, mood, scene, composer or catalog number. |
 | | `/match-reference` | Paste a Spotify / YouTube / Apple Music / Deezer link and get the closest AINSOF cues, matched by sound. |
 | | `/cue-sheet` | Pull writers, splits, ISRC and publisher for a cue you used. |
 
@@ -86,7 +86,7 @@ Developer mode → Connectors → add `https://mcp.ainsof.io`.
 
 | Tool | What it does |
 |---|---|
-| `search_music` | Find cues by a written brief, a mood, or an exact track / album / catalogue number |
+| `search_music` | Find cues by a written brief, a mood, or an exact track / album / catalog number |
 | `search_by_reference` | Paste a YouTube / Spotify / Apple Music / SoundCloud link — it listens and returns the closest AINSOF cues |
 | `find_soundtrack` | Describe your video (length, pace, narration) and get cues that fit it |
 | `score_my_video` | Upload a video and get back a professionally scored edit, synced to picture |
@@ -95,7 +95,7 @@ Developer mode → Connectors → add `https://mcp.ainsof.io`.
 | `listen_link` | A playable link for any cue |
 | `get_upload_link` / `deliver_score` | Move video in, get the scored result out |
 | `cue_sheet` | Cue-sheet data for anything you used |
-| `about_ainsof` | Licensing, catalogue and privacy details |
+| `about_ainsof` | Licensing, catalog and privacy details |
 | `feedback` | Tell us when a result was right or wrong (with your consent) |
 
 Previews are always the complete piece, watermarked — cut with them freely before
@@ -110,12 +110,12 @@ one you keep comes back through `score_my_video` already synced to your cut.
 
 **A creative team pitching with a reference.** The client says *"something like Hans
 Zimmer's Time."* Paste the link. `search_by_reference` listens to the actual record
-and answers with the closest cues in the AINSOF catalogue — playable immediately,
+and answers with the closest cues in the AINSOF catalog — playable immediately,
 licensable the same day.
 
 **An agency producer clearing a spot.** The edit is locked and legal wants paper.
 `get_track` returns every version and stem of the cue you used, `cue_sheet` returns
-the cue-sheet data, and licensing is one email — every cue in the catalogue is
+the cue-sheet data, and licensing is one email — every cue in the catalog is
 pre-cleared, one owner, no chain-of-title archaeology.
 
 **A developer building a creative tool.** Your users edit video in your product.
@@ -140,7 +140,7 @@ claude mcp add --transport http ainsof https://mcp.ainsof.io \
 
 ## Licensing & privacy
 
-The catalogue itself is commercial — every cue is signed, owned and cleared, and
+The catalog itself is commercial — every cue is signed, owned and cleared, and
 licensing runs through [ainsof.io](https://ainsof.io). This repository contains the
 public server manifest and connection docs only, released under the MIT licence
 ([LICENSE](LICENSE)); what that licence does and does not cover is spelled out in

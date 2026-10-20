@@ -22,7 +22,7 @@ The length is the whole point. A 22-second cut needs a version that resolves at 
 
 - A pasted Spotify / YouTube / Apple Music / Deezer link, or a named record → `search_by_reference`. Its first reply is usually `{ ok: false, error: "still_running" }` — that is the search listening to the reference, not a failure. Call it again with the same link.
 - A described mood, genre, scene or energy → `find_soundtrack` with `duration_sec` set to the real length.
-- A named cue, album, catalogue number or composer → `search_music` with that name as the brief.
+- A named cue, album, catalog number or composer → `search_music` with that name as the brief.
 
 ## 3. Show three, not ten
 

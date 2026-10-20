@@ -1,5 +1,5 @@
 ---
-description: Search the AINSOF catalogue by written brief, mood, scene, composer or catalogue number
+description: Search the AINSOF catalog by written brief, mood, scene, composer or catalog number
 argument-hint: "[brief — e.g. 'warm acoustic underscore for an interview']"
 ---
 
@@ -8,7 +8,7 @@ Search AINSOF for: `$1`
 Call `search_music` with that as the brief. It handles all of these in one shot:
 
 - **A description** — mood, genre, instrument, energy, scene. "Tense strings under a news package", "Chinese trailer music", "warm acoustic underscore".
-- **A name** — a cue, an album, a catalogue number (`AIN-CAT 031`), or a composer. Pass the name straight through as the brief; it is matched against the catalogue directly.
+- **A name** — a cue, an album, a catalog number (`AIN-CAT 031`), or a composer. Pass the name straight through as the brief; it is matched against the catalog directly.
 - **Both** — "warm acoustic, something by Amit Weiner" searches on the description and puts that writer's cues first. Do not split it up.
 
 ## Presenting results

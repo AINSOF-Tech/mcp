@@ -9,7 +9,7 @@ The AINSOF server is a remote, authless MCP endpoint: `https://mcp.ainsof.io`. I
 
 ## Verify the connection
 
-Check that the AINSOF tools are present. The quickest confirmation is to call `about_ainsof`, which is read-only and returns catalogue, licensing and privacy details. Twelve tools should be available:
+Check that the AINSOF tools are present. The quickest confirmation is to call `about_ainsof`, which is read-only and returns catalog, licensing and privacy details. Twelve tools should be available:
 
 `search_music` · `search_by_reference` · `find_soundtrack` · `get_track` · `listen_link` · `cue_sheet` · `analyze_video` · `score_my_video` · `get_upload_link` · `deliver_score` · `about_ainsof` · `feedback`
 
@@ -48,7 +48,7 @@ claude mcp add --transport http ainsof https://mcp.ainsof.io \
 ## Two replies that are not errors
 
 1. `search_by_reference` returning `{ ok: false, error: "still_running" }` — the search is listening to the reference. Call it again with the same link.
-2. `find_soundtrack` erroring without `duration_sec` — that is a missing argument, not an empty catalogue. Supply the length, or use `search_music`.
+2. `find_soundtrack` erroring without `duration_sec` — that is a missing argument, not an empty catalog. Supply the length, or use `search_music`.
 
 ## Privacy
 
