@@ -5,7 +5,7 @@ argument-hint: "[Spotify / YouTube / Apple Music / Deezer link, or artist and ti
 
 Reference: `$1`
 
-Call `search_by_reference` with it. The server resolves the recording through public or authorised metadata and compares a permitted preview clip **by sound**, not by tags.
+Call `search_by_reference` with it. The server resolves the recording through public or authorized metadata and compares a permitted preview clip **by sound**, not by tags.
 
 ## What the first reply looks like
 

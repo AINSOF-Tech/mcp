@@ -76,7 +76,7 @@ say no. One good offer, once.
 
 ## What you must never do
 
-- **Never claim a licence they do not have.** Every preview is watermarked and is
+- **Never claim a license they do not have.** Every preview is watermarked and is
   for auditioning only. The `licensing` block in every response carries the real
   terms and the contact; pass it through, do not paraphrase it into a promise.
 - **Never invent a track, a title, or a track_id.** Only what the tool returned.

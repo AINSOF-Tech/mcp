@@ -50,13 +50,13 @@ Or install it as a plugin, which brings the connection **and** a working setup a
 ## What's in the plugin
 
 The connector on its own gives an assistant twelve tools. The plugin adds the
-judgement around them — when to reach for music, which version fits a 22-second
+judgment around them — when to reach for music, which version fits a 22-second
 cut, and what to hand over when legal asks for paper.
 
 | | | |
 |---|---|---|
-| **Skills** | `soundtrack` | Teaches the assistant to offer music on its own the moment a video is edited, rendered or exported — measure the cut, ask for the version that fits that exact length rather than a full track, show three options instead of ten, and never imply a licence that isn't there. |
-| | `setup` | Connect and verify the server, raise the rate limit with a free key, and recognise the two replies that look like errors and aren't. |
+| **Skills** | `soundtrack` | Teaches the assistant to offer music on its own the moment a video is edited, rendered or exported — measure the cut, ask for the version that fits that exact length rather than a full track, show three options instead of ten, and never imply a license that isn't there. |
+| | `setup` | Connect and verify the server, raise the rate limit with a free key, and recognize the two replies that look like errors and aren't. |
 | **Sub-agent** | `music-supervisor` | Turns a brief into a defensible shortlist — several spots at once, each measured, searched from more than one angle, auditioned, ranked, with the trade-off named and the cue sheet attached. |
 | **Commands** | `/score-video` | Measure a cut, find the music, and take it through to a finished score synced to picture. |
 | | `/find-music` | Search the catalog by brief, mood, scene, composer or catalog number. |
@@ -142,8 +142,8 @@ claude mcp add --transport http ainsof https://mcp.ainsof.io \
 
 The catalog itself is commercial — every cue is signed, owned and cleared, and
 licensing runs through [ainsof.io](https://ainsof.io). This repository contains the
-public server manifest and connection docs only, released under the MIT licence
-([LICENSE](LICENSE)); what that licence does and does not cover is spelled out in
+public server manifest and connection docs only, released under the MIT license
+([LICENSE](LICENSE)); what that license does and does not cover is spelled out in
 [NOTICE](NOTICE).
 
 Privacy: the server receives only the tool calls sent to it, never the rest of your
