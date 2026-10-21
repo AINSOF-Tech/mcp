@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "ainsof": {
+      "type": "http",
       "url": "https://mcp.ainsof.io"
     }
   }
