@@ -5,13 +5,13 @@ description: Connect and verify the AINSOF MCP server after installing the plugi
 
 # Setting up AINSOF
 
-The AINSOF server is a remote, authless MCP endpoint: `https://mcp.ainsof.io`. Installing the plugin is normally all it takes — there is no OAuth flow, no account and no key required to start.
+The AINSOF server is a remote, authless MCP endpoint: `https://mcp.ainsof.io`. Installing the plugin is normally all it takes: there is no OAuth flow, no account and no key required to start.
 
 ## Verify the connection
 
-Check that the AINSOF tools are present. The quickest confirmation is to call `about_ainsof`, which is read-only and returns catalog, licensing and privacy details. Twelve tools should be available:
+Check that the AINSOF tools are present. The quickest confirmation is to call `about_ainsof`, which is read-only and returns catalog, licensing and privacy details. Fourteen tools should be available:
 
-`search_music` · `search_by_reference` · `find_soundtrack` · `get_track` · `listen_link` · `cue_sheet` · `analyze_video` · `score_my_video` · `get_upload_link` · `deliver_score` · `about_ainsof` · `feedback`
+`search_music` · `search_by_reference` · `find_soundtrack` · `find_similar` · `fit_to_length` · `get_track` · `listen_link` · `cue_sheet` · `analyze_video` · `score_my_video` · `get_upload_link` · `deliver_score` · `about_ainsof` · `feedback`
 
 ## If the tools are missing
 
@@ -23,12 +23,12 @@ claude mcp add --transport http ainsof https://mcp.ainsof.io
 
 In other hosts:
 
-- **Claude.ai / Claude Desktop** — Settings → Connectors → Add custom connector → `https://mcp.ainsof.io`
-- **Cursor** — add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
+- **Claude.ai / Claude Desktop:** Settings → Connectors → Add custom connector → `https://mcp.ainsof.io`
+- **Cursor:** add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
   ```json
   { "mcpServers": { "ainsof": { "url": "https://mcp.ainsof.io" } } }
   ```
-- **ChatGPT** — Developer mode → Connectors → `https://mcp.ainsof.io`
+- **ChatGPT:** Developer mode → Connectors → `https://mcp.ainsof.io`
 
 ## Rate limits
 
@@ -45,10 +45,11 @@ claude mcp add --transport http ainsof https://mcp.ainsof.io \
   --header "Authorization: Bearer ain_live_…"
 ```
 
-## Two replies that are not errors
+## Three replies that are not errors
 
-1. `search_by_reference` returning `{ ok: false, error: "still_running" }` — the search is listening to the reference. Call it again with the same link.
-2. `find_soundtrack` erroring without `duration_sec` — that is a missing argument, not an empty catalog. Supply the length, or use `search_music`.
+1. `search_by_reference` returning `{ ok: false, error: "still_running" }`: the search is still running. Call it again with the same link.
+2. `find_soundtrack` erroring without `duration_sec`: that is a missing argument, not an empty catalog. Supply the length, or use `search_music`.
+3. `analyze_video`, `score_my_video` or `deliver_score` returning `sign_in_required`: before AINSOF works with a video, the person signs in once on ainsof.io with Google or email. Show them the returned link, then call again with the same arguments plus the `sign_in_code`.
 
 ## Privacy
 

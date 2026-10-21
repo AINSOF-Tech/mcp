@@ -9,7 +9,7 @@ Call `search_by_reference` with it. The server resolves the recording through pu
 
 ## What the first reply looks like
 
-Usually `{ ok: false, error: "still_running" }`. That is the search running. Call `search_by_reference` again with the same link — it picks up the search already in progress. Do not report it as a failure and do not fall back to a text search on the first try.
+Usually `{ ok: false, error: "still_running" }`. That is the search running. Call `search_by_reference` again with the same link and it picks up the search already in progress. Do not report it as a failure and do not fall back to a text search on the first try.
 
 ## Links that are not supported
 
@@ -21,4 +21,4 @@ An AINSOF cue that *sounds like* that reference. Records by other artists cannot
 
 ## Presenting the match
 
-Three cues, each with its album artwork thumbnail, a `listen_link`, and one line naming what carries over from the reference — the tempo, the instrumentation, the way it builds. If the closest match is only a loose fit, say that rather than overselling it.
+Three cues, each with its album artwork thumbnail, a `listen_link`, and one line naming what carries over from the reference: the tempo, the instrumentation, the way it builds. If the closest match is only a loose fit, say that rather than overselling it.

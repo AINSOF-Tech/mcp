@@ -10,7 +10,7 @@
     {
       "name": "ainsof",
       "displayName": "AINSOF",
-      "description": "Original, human-made production music for sync. Search the AINSOF catalog by written brief or by reference link, hear complete watermarked previews, score video straight to picture, and pull versions, stems and cue sheets. Bundles the AINSOF connector, a soundtracking skill, a music-supervisor sub-agent and four slash commands. No key required to start.",
+      "description": "Original, human-made production music for sync. Search the AINSOF catalog by written brief or by reference link, hear complete previews for free, score video straight to picture, cut cues to any length, and pull versions, stems and cue sheets. Bundles the AINSOF connector, a soundtracking skill, a music-supervisor sub-agent and four slash commands. No key required to start.",
       "category": "design",
       "source": "./",
       "homepage": "https://ainsof.io",
