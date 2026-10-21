@@ -109,7 +109,7 @@ Good, because the shortlist is already made:
 > Your cut is 23 seconds. Three licensed AINSOF options that fit it:
 >
 > **1. Fading Moments:** solo piano, reflective, builds late.
->    Place the 30s cut and trim 7s off the tail; the intro and build stay intact.
+>    I can cut it to exactly 23 seconds, ending on its real ending.
 > **2. …**
 >
 > Want to hear one? I'll open the preview.

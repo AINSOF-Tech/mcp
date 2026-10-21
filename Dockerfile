@@ -4,7 +4,7 @@
 # This image exists so that hosts and registries which expect a locally started,
 # stdio-speaking process can still reach it. It starts mcp-remote, which bridges
 # stdio to the hosted endpoint and forwards tools/list and every tool call
-# unchanged. The tool surface it exposes is exactly the hosted one — 12 tools.
+# unchanged. The tool surface it exposes is exactly the hosted one: 14 tools.
 
 FROM node:22-alpine
 
