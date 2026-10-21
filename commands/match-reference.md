@@ -13,7 +13,7 @@ Usually `{ ok: false, error: "still_running" }`. That is the search running. Cal
 
 ## Links that are not supported
 
-SoundCloud and TikTok cannot be resolved. Ask for the artist and title instead, then pass those to `search_music`.
+SoundCloud and TikTok cannot be resolved. Ask for the artist and title instead, then pass them to `search_by_reference` as `artist - title`.
 
 ## What is actually being asked
 
