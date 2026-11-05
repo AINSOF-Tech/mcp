@@ -3,7 +3,7 @@
   "name": "io.ainsof/mcp",
   "title": "AINSOF",
   "description": "Human-made production music for sync. Search by brief or reference, preview, and score to picture.",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "websiteUrl": "https://ainsof.io",
   "repository": {
     "url": "https://github.com/AINSOF-Tech/mcp",

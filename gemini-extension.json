@@ -1,0 +1,10 @@
+{
+  "name": "ainsof",
+  "version": "1.0.8",
+  "description": "Human-made production music for sync. Search by brief or reference, preview, cut to length and score to picture.",
+  "mcpServers": {
+    "ainsof": {
+      "httpUrl": "https://mcp.ainsof.io"
+    }
+  }
+}

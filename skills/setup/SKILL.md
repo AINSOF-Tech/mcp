@@ -23,12 +23,12 @@ claude mcp add --transport http ainsof https://mcp.ainsof.io
 
 In other hosts:
 
-- **Claude.ai / Claude Desktop:** Settings → Connectors → Add custom connector → `https://mcp.ainsof.io`
+- **Claude.ai / Claude Desktop:** Customize → Connectors → + Add → Add custom connector → `https://mcp.ainsof.io` (Free accounts can add one custom connector)
 - **Cursor:** add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
   ```json
   { "mcpServers": { "ainsof": { "url": "https://mcp.ainsof.io" } } }
   ```
-- **ChatGPT:** Developer mode → Connectors → `https://mcp.ainsof.io`
+- **ChatGPT:** add the official AINSOF app: https://chatgpt.com/plugins/plugin_asdk_app_6a78633c69008191bb4a9fac1a8e5b2e
 
 ## Rate limits
 
@@ -38,11 +38,11 @@ In other hosts:
 | With an API key | 1,000 |
 | More than that | email info@ainsof.io |
 
-Keys are free. Email **info@ainsof.io**, then send the key as a bearer token:
+Keys are free. Sign in at https://ainsof.io/account/api-keys and choose Create new key (it is shown once), then send it as a bearer token:
 
 ```bash
 claude mcp add --transport http ainsof https://mcp.ainsof.io \
-  --header "Authorization: Bearer ain_live_…"
+  --header "Authorization: Bearer ain_…"
 ```
 
 ## Three replies that are not errors

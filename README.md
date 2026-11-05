@@ -15,26 +15,27 @@
 <p align="center">
   <a href="https://ainsof.io">ainsof.io</a> ·
   <a href="https://mcp.ainsof.io">mcp.ainsof.io</a> ·
-  <a href="https://search.ainsof.io">browse the catalog</a>
+  <a href="https://ainsof.io/music">browse the catalog</a>
 </p>
 
 ---
 
-**Endpoint:** `https://mcp.ainsof.io` (Streamable HTTP, no key required)
+**Endpoint:** `https://mcp.ainsof.io` (Streamable HTTP, no key required to start; the video tools ask the person to sign in once on ainsof.io)
 
 AINSOF is a music superpowers creative company: a curated, growing production-music
 catalog built for sync, with purpose-made tools for connecting music to picture.
 Every cue is written, performed and produced by human composers; nothing in the
 catalog is AI-generated. New original music lands every week.
 
-This server puts the whole catalog behind 14 MCP tools, so an AI assistant can
+This server puts the whole catalog behind 16 MCP tools, so an AI assistant can
 find the right cue for a scene, play it, fetch stems and cut-downs, and even return
 a finished, professionally scored edit of your video.
 
 ## Connect
 
 ### Claude (claude.ai / Claude Desktop)
-Settings → Connectors → **Add custom connector** → paste `https://mcp.ainsof.io`.
+Customize → Connectors → **+ Add** → **Add custom connector** → paste `https://mcp.ainsof.io`.
+Works on every plan; Free accounts can add one custom connector. On Team and Enterprise an owner adds it for the workspace.
 
 ### Claude Code
 ```bash
@@ -49,7 +50,7 @@ Or install it as a plugin, which brings the connection **and** a working setup a
 
 ## What's in the plugin
 
-The connector on its own gives an assistant fourteen tools. The plugin adds the
+The connector on its own gives an assistant sixteen tools. The plugin adds the
 judgment around them: when to reach for music, which version fits a 22-second
 cut, and what to hand over when legal asks for paper.
 
@@ -80,7 +81,10 @@ Add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
 Connectors → add a remote MCP connector with `https://mcp.ainsof.io`.
 
 ### ChatGPT
-Developer mode → Connectors → add `https://mcp.ainsof.io`.
+AINSOF is an official app in ChatGPT: open [AINSOF in ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6a78633c69008191bb4a9fac1a8e5b2e) and add it. There is no address to paste.
+
+### Gemini
+On gemini.google.com: Connected Apps → Custom apps for Spark → paste `https://mcp.ainsof.io`. Google currently limits custom apps to personal Google Accounts with Keep Activity on, in the US, in English, for users 18 and over.
 
 ## What it can do
 
@@ -89,8 +93,10 @@ Developer mode → Connectors → add `https://mcp.ainsof.io`.
 | `search_music` | Find cues by a written brief, a mood, or an exact track / album / catalog number |
 | `search_by_reference` | Paste a Spotify / YouTube / Apple Music / Deezer link, or name a record, and get the closest AINSOF cues by sound. SoundCloud and TikTok links are not supported; give the artist and title instead |
 | `find_similar` | Find AINSOF cues that sound like an AINSOF cue, either the whole cue or a passage of it (5 to 60 seconds, such as the hook) |
+| `browse_tag` | List the cues under one AINSOF genre, mood, instrument or use tag, in ranked order |
+| `browse_playlist` | List the tracks of an AINSOF editorial playlist by its name, in the site's order |
 | `find_soundtrack` | Describe your video (length, pace, narration) and get cues that fit it |
-| `score_my_video` | Upload a video and get back a professionally scored edit, synced to picture |
+| `score_my_video` | Give it a video link and get back a professionally scored edit, synced to picture (a file on your computer goes up through `get_upload_link` first) |
 | `analyze_video` | Structural analysis of a video: cuts, pacing, sections |
 | `fit_to_length` | Cut a chosen cue to a length from 1 to 300 seconds the way an editor would: whole bars and the real ending, never stretched. Also exact video lengths, seamless loops and matching stems |
 | `get_track` | Full detail for one cue: versions, stems, metadata |
@@ -135,11 +141,11 @@ with no key required to start.
 | With an API key | 1,000 |
 | Need more? | info@ainsof.io |
 
-Keys are free: email **info@ainsof.io**. Send one as a bearer token:
+Keys are free: sign in at [ainsof.io/account/api-keys](https://ainsof.io/account/api-keys) and choose **Create new key** (shown once). Send it as a bearer token:
 
 ```bash
 claude mcp add --transport http ainsof https://mcp.ainsof.io \
-  --header "Authorization: Bearer ain_live_…"
+  --header "Authorization: Bearer ain_…"
 ```
 
 ## Licensing & privacy
