@@ -9,9 +9,9 @@ The AINSOF server is a remote, authless MCP endpoint: `https://mcp.ainsof.io`. I
 
 ## Verify the connection
 
-Check that the AINSOF tools are present. The quickest confirmation is to call `about_ainsof`, which is read-only and returns catalog, licensing and privacy details. Fourteen tools should be available:
+Check that the AINSOF tools are present. The quickest confirmation is to call `about_ainsof`, which is read-only and returns catalog, licensing and privacy details. Sixteen tools should be available:
 
-`search_music` · `search_by_reference` · `find_soundtrack` · `find_similar` · `fit_to_length` · `get_track` · `listen_link` · `cue_sheet` · `analyze_video` · `score_my_video` · `get_upload_link` · `deliver_score` · `about_ainsof` · `feedback`
+`search_music` · `search_by_reference` · `find_soundtrack` · `find_similar` · `fit_to_length` · `get_track` · `listen_link` · `cue_sheet` · `analyze_video` · `score_my_video` · `get_upload_link` · `deliver_score` · `browse_tag` · `browse_playlist` · `about_ainsof` · `feedback`
 
 ## If the tools are missing
 
