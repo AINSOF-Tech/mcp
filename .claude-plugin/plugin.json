@@ -1,7 +1,7 @@
 {
   "name": "ainsof",
   "displayName": "AINSOF",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Original, human-made production music for sync. Search the AINSOF catalog by written brief or by reference link, hear complete previews for free, score video straight to picture, cut cues to any length, and pull versions, stems and cue sheets.",
   "author": {
     "name": "AINSOF",
@@ -25,11 +25,5 @@
     "scoring",
     "audio",
     "mcp"
-  ],
-  "mcpServers": {
-    "ainsof": {
-      "type": "http",
-      "url": "https://mcp.ainsof.io"
-    }
-  }
+  ]
 }
